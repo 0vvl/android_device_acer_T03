@@ -58,7 +58,7 @@ persist.sys.button_jack_switch=0
 
 persist.tone_relative_volume=100
 ro.mediatek.chip_ver=S01
-ro.mediatek.platform=mt6735m
+ro.mediatek.platform=mt6735
 ro.telephony.sim.count=2
 persist.radio.default.sim=0
 persist.radio.multisim.config=dsds
