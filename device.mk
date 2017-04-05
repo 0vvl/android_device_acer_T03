@@ -133,11 +133,6 @@ PRODUCT_COPY_FILES += \
     	$(LOCAL_PATH)/configs/ecc_list.xml:system/etc/ecc_list.xml \
     	$(LOCAL_PATH)/configs/spn-conf.xml:system/etc/spn-conf.xml 
 
-#Sim
-PRODUCT_PACKAGES += \
-    gsm0710muxd
-
-
 # GPS
 PRODUCT_COPY_FILES += \
     device/acer/T03/configs/agps_profiles_conf2.xml:system/etc/agps_profiles_conf2.xml
@@ -151,10 +146,6 @@ PRODUCT_PACKAGES += \
         libfmmt6627 \
         libfmmt6630 \
         libfmcust    
-
-#Su
-PRODUCT_PACKAGES += \
-	su 
 
 # Media	
 PRODUCT_COPY_FILES += \
