@@ -37,7 +37,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_BASE := 0x40000000
 
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,32N2 
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,32N2 androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_PAGESIZE := 2048
 
@@ -108,20 +108,21 @@ BOARD_USES_MTK_AUDIO := true
 MTK_FM_SUPPORT := yes
 MTK_FM_RX_SUPPORT := yes
 
-#recovery
+#TWRP-recovery
 #TARGET_RECOVERY_FSTAB := device/acer/T03/recovery/root/etc/twrp.fstab
 #BOARD_SUPPRESS_SECURE_ERASE := true
 #BOARD_HAS_NO_SELECT_BUTTON := true
 #TW_BRIGHTNESS_PATH := /sys/class/leds/lcd-backlight/brightness
 #TW_MAX_BRIGHTNESS := 255
 #TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
-##RECOVERY_GRAPHICS_USE_LINELENGTH := true
+#RECOVERY_GRAPHICS_USE_LINELENGTH := true
 #TW_THEME := portrait_mdpi
 ##if sdcard0 is a /data/media emulated one
-##RECOVERY_SDCARD_ON_DATA := true
+#RECOVERY_SDCARD_ON_DATA := true
 #TW_EXCLUDE_DEFAULT_USB_INIT := true
 #TW_INCLUDE_CRYPTO := true
 #TARGET_RECOVERY_PIXEL_FORMAT := "RGBA_8888"
+#Recovery
 BOARD_HAS_NO_SELECT_BUTTON := false
 BOARD_RECOVERY_SWIPE := true
 BOARD_SUPPRESS_EMMC_WIPE := true

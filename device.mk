@@ -42,13 +42,15 @@ PRODUCT_COPY_FILES += \
 	device/acer/T03/rootdir/meta_init.modem.rc:root/meta_init.modem.rc \
 	device/acer/T03/rootdir/meta_init.project.rc:root/meta_init.project.rc \
 	device/acer/T03/rootdir/meta_init.rc:root/meta_init.rc \
-	device/acer/T03/rootdir/ueventd.rc:root/ueventd.rc 
+	device/acer/T03/rootdir/ueventd.mt6735.rc:root/ueventd.mt6735.rc 
 	
 # hardware specifics
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/native/data/etc/android.software.sip.xml:system/etc/permissions/android.software.sip.xml \
+    frameworks/native/data/etc/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml \
+    frameworks/native/data/etc/android.hardware.camera.autofocus.xml:system/etc/permissions/android.hardware.camera.autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
     frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
@@ -62,7 +64,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
-    frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml
+    frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml 
     
 # CM's Snap camera
 #PRODUCT_PACKAGES += \
@@ -186,6 +188,6 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 	ro.debuggable=0 \
 	ro.mount.fs=EXT4 \
 	ro.adb.secure=0 \
-	persist.service.adb.enable=0 \
+	persist.service.adb.enable=1 \
 	ro.oem_unlock_supported=1 \
 	persist.sys.usb.config=mtp
