@@ -2,6 +2,8 @@
 cd ../../../..
 cd frameworks/av
 git apply -v ../../device/acer/T03/patches/framework_av/0001-Patch-for-6735-mtk.patch
+git apply -v ../../device/acer/T03/patches/framework_av/0002-camera.patch
+git apply -v ../../device/acer/T03/patches/framework_av/frameworks_av_videorecording_fix.patch
 cd ../..
 cd frameworks/base
 git apply -v ../../device/acer/T03/patches/framework_base/0001-Patch-for-6735-mtk.patch
@@ -18,13 +20,11 @@ cd ../..
 cd hardware/libhardware_legacy
 git apply -v ../../device/acer/T03/patches/hardware_libhardware_legacy/0001-Patch-for-6735-mtk.patch
 cd ../..
-cd packages/services/Telephony
-git apply -v ../../../device/acer/T03/patches/packages_services_telephony/0001-Patch-for-6735-mtk.patch
-cd ../../..
 cd system/core
 git apply -v ../../device/acer/T03/patches/system_core/0001-mt6735.patch
 cd ../..
 cd system/netd
 git apply -v ../../device/acer/T03/patches/system_netd/0001-Patch-for-6735-mtk.patch
 cd ../..
+
 echo Patches Applied Successfully!
